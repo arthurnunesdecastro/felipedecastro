@@ -33,7 +33,7 @@ body {
 }
 @media (min-width: 0) and (max-width: 1119px) {
   #hero-wrapper {
-    background-image: url("../abouthero.png");
+    background-image: url("/felipedecastro/abouthero.png");
     background-repeat: no-repeat;
     background-size: 100vw 265px;
     padding: 0;
