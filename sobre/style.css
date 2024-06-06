@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+body {
+  color: #252525;
+}
+
+#hero-wrapper {
+  width: 84%;
+  border-bottom: 0.7px solid rgba(0, 0, 0, 0.062);
+  padding: 30px;
+  display: flex;
+  margin-left: 7.4%;
+  padding: 50px 0 60px 7vw;
+}
+#hero-wrapper .btn {
+  margin-left: 100px;
+}
+#hero-wrapper :nth-child(3) {
+  margin-top: 20px;
+}
+#hero-wrapper :nth-child(4) {
+  display: none;
+}
+#hero-wrapper #sech1 {
+  margin-left: 50px;
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+#hero-wrapper h1 {
+  font-family: "Lora", serif;
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 100%;
+}
+@media (min-width: 0) and (max-width: 1119px) {
+  #hero-wrapper {
+    background-image: url("../abouthero.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 265px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding-left: 5.5vw;
+    border: none;
+  }
+  #hero-wrapper .btn {
+    margin: 0;
+  }
+  #hero-wrapper #h1-wp {
+    display: flex;
+    width: 100%;
+    padding-top: 215px;
+  }
+  #hero-wrapper #h1-wp #sech1 {
+    margin-left: 8px;
+  }
+  #hero-wrapper #h1-wp h1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 35px;
+    margin-right: 100px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  #hero-wrapper #hero-txt-wp {
+    width: 100%;
+  }
+  #hero-wrapper #hero-txt-wp .btn {
+    display: inline-block;
+  }
+  #hero-wrapper #hero-txt-wp p {
+    display: none;
+  }
+  #hero-wrapper #hero-txt-wp :nth-child(4) {
+    display: block;
+    margin: 30px 0 20px 0;
+    width: 95%;
+    padding: 0;
+    font-size: 14px;
+  }
+  #hero-wrapper p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #hero-wrapper img {
+    display: none;
+  }
+}
+#hero-wrapper img {
+  height: 600px;
+  width: 500px;
+  margin-left: 3vw;
+}
+#hero-wrapper div {
+  width: 65%;
+}
+#hero-wrapper div :nth-child(3) {
+  margin-bottom: 30px;
+}
+#hero-wrapper p {
+  margin-left: 100px;
+  width: 75%;
+  font-size: 17px;
+  color: rgba(107, 107, 107, 0.8352941176);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+#story-wrapper {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  margin: 50px 17.5%;
+  justify-content: space-between;
+}
+#story-wrapper #img-wrapper {
+  width: 40%;
+}
+#story-wrapper #img-wrapper :first-child {
+  margin-bottom: 30px;
+}
+#story-wrapper #img-wrapper img {
+  height: 350px;
+  width: 100%;
+}
+#story-wrapper .story-text-nav {
+  width: 60%;
+  padding-right: 10%;
+}
+#story-wrapper .story-text-nav :nth-child(4) {
+  margin-top: 18px;
+}
+#story-wrapper .story-text-nav p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.625em;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+@media (min-width: 0) and (max-width: 1119px) {
+  #story-wrapper {
+    width: 100%;
+    flex-direction: column;
+    padding: 70px 0 0 5.5vw;
+    margin: 0;
+  }
+  #story-wrapper .story-text-nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #story-wrapper .story-text-nav p {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  #story-wrapper .story-text-nav h2 {
+    display: none;
+  }
+  #story-wrapper .story-text-nav .story-bar-nav {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    padding-bottom: 15px;
+  }
+  #story-wrapper .story-text-nav .story-bar-nav h2 {
+    display: inline;
+    font-weight: 500;
+    font-size: 33px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-transform: none;
+    margin-bottom: 15px;
+  }
+  #story-wrapper .story-text-nav .story-bar-nav .bar {
+    width: 40px;
+    height: 7px;
+    background-image: linear-gradient(160deg, #ac7200, #DFAE4F);
+    border-radius: 10px;
+  }
+  #story-wrapper #img-wrapper {
+    width: 100%;
+    padding-right: 5vw;
+    flex-direction: column;
+    padding-bottom: 200px;
+  }
+}
+#story-wrapper .story-bar-nav {
+  display: flex;
+  align-items: center;
+}
+#story-wrapper .story-bar-nav h2 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+#story-wrapper .story-bar-nav .bar {
+  width: 50px;
+  height: 2px;
+  background-color: #DFAE4F;
+  margin-right: 15px;
+}
+#story-wrapper h2 {
+  font-family: "Lora", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.348em;
+  margin: 19px 0;
+  max-width: 558px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
