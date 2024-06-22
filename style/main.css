@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kaisei+Opti&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -42,6 +36,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .btn-nav {
@@ -492,10 +491,10 @@ header {
     height: 500px;
   }
   #carrossel #carrossel-container #items .item .item-text-wrapper h2 {
-    font-size: max(9vw, 28px);
+    font-size: max(6vw, 28px);
   }
   #carrossel #carrossel-container #items .item .item-text-wrapper p {
-    font-size: max(3.5vw, 12px);
+    font-size: max(1.8vw, 12px);
     margin-top: 20px;
     width: 100%;
   }

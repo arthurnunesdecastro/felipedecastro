@@ -6,12 +6,6 @@ $spotOne: #26115a;
 $spotTwo: #DFAE4F;
 $spotThree: #ac7200;
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 @mixin mobile {
   @media (min-width: #{$mobile-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;
@@ -73,7 +67,10 @@ $spotThree: #ac7200;
 }
 
 
-
+#wrapper{
+    width: 100%;
+    overflow-x: hidden;
+}
 
 .btn-nav{
     display: flex;
@@ -514,10 +511,10 @@ header{
                         padding: 20px 7vw 80px 7vw;
                         height: 500px;
                         h2{
-                            font-size: max(9vw,28px);
+                            font-size: max(6vw,28px);
                         }
                         p{
-                            font-size: max(3.5vw,12px);
+                            font-size: max(1.8vw,12px);
                             margin-top: 20px;
                             width: 100%;
                         }

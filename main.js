@@ -1,6 +1,6 @@
 let dropdownMenu = document.querySelector('ul.pages')
 let menuBtn      = document.querySelector('#menu')
-let whatsappBtn  = document.getElementById('whatsapp')
+let sendMsg  = document.getElementById('send')
 let nextBtn = document.getElementById('next');
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -71,7 +71,7 @@ menuBtn.addEventListener('click', toggleMenu)
 
 
 const sendToWhatsApp = () => {
-	let number = "+554898276387";
+	let number = "+554896931460";
     let hour = new Date().getHours()
     let timeofdday = ''
     if (hour <= 12){
@@ -95,5 +95,5 @@ const sendToWhatsApp = () => {
 	window.open(url, '_blank');
 }
 
-whatsappBtn.addEventListener('click', sendToWhatsApp)
+sendMsg.addEventListener('click', sendToWhatsApp)
 

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-$desktop-width: 800px;
+$desktop-width: 1027px;
 
 @mixin mobile {
   @media (min-width: 0) and (max-width: #{$desktop-width - 1px}) {
@@ -24,9 +24,10 @@ body{
     }
     h1{
         font-family: "Lora", serif;
-        font-size: min(8vw,120px);
+        font-size: min(6vw,120px);
         font-weight: 500;
         line-height: 100%;
+        width: 100%;
     }
     width: 84%;
     border-bottom: 0.7px solid rgba(0, 0, 0, 0.062);
@@ -47,9 +48,9 @@ body{
 
 
     p{
-        margin-left: min8vw;
+        margin-left: min(4vw,50px);
         width: 75%;
-        font-size: 17px;
+        font-size: min(1.3vw,16px);
         color: #6b6b6bd5;
         font-weight: 500;
         letter-spacing: 0.5px;
@@ -82,7 +83,7 @@ body{
                 width: 100%;
             }
             h1{
-                font-size: 70px;
+                font-size: max(16vw, 40px);
 
                 padding: 0;
                 color: #fff;
@@ -107,14 +108,15 @@ body{
 #story-wrapper{
     display: flex;
     align-items: center;
-
     #img-wrapper{
         width: 40%;
-        :first-child{
-            margin-bottom: 40px;
-        }
+        display: flex;
+        gap: 50px;
+        flex-direction: column; 
+        // :first-child{
+        //     margin-bottom: 40px;
+        // }
         img{
-            height: 350px;
             width: 100%;
         }
     }
@@ -129,6 +131,7 @@ body{
             line-height: 1.625em;
             letter-spacing: 0.5px;
             word-spacing: 1px;
+            font-size: min(1.1vw,16px);
         }
     }
     @include mobile(){
@@ -180,7 +183,6 @@ body{
             padding-bottom: 200px;
         }
     }
-    width: 65%;
     margin: 50px 17.5%;
     justify-content: space-between;
 
@@ -203,11 +205,11 @@ body{
     }
     h2{
         font-family: 'Lora', sans-serif;
-        font-size: 50px;
         font-weight: 400;
         line-height: 1.348em;
         margin: 19px 0;
         max-width: 558px;
+        font-size: min(3vw,50px);
         text-transform: uppercase;
     }
 
