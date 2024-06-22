@@ -1,3 +1,0 @@
-adicionar a funcao para o botao de contato
-adicionar as imagens do careca certo
-arrumar os caminhos dos arquivos
