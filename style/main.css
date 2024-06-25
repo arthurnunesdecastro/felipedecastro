@@ -272,7 +272,7 @@ header {
 }
 @media (min-width: 0px) and (max-width: 1036px) {
   .hero-wrap #hero-txt-wp {
-    padding: 60px 1vw 150px 0;
+    padding: 60px 1vw 350px 0;
   }
   .hero-wrap #hero-txt-wp #sech1 {
     margin: 0;
