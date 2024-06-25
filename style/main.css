@@ -267,7 +267,7 @@ header {
   word-spacing: 3px;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-.hero-wrap .short-p {
+.short-p {
   display: none;
 }
 @media (min-width: 0px) and (max-width: 1036px) {
