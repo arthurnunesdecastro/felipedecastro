@@ -6,18 +6,12 @@ body {
 #hero-wrapper {
   width: 84%;
   border-bottom: 0.7px solid rgba(0, 0, 0, 0.062);
-  padding: 30px;
   display: flex;
   margin-left: 7.4%;
-  padding: 50px 0 60px 7vw;
+  padding: 50px 0 0 7vw;
 }
 #hero-wrapper :nth-child(3) {
   margin-top: 20px;
-}
-#hero-wrapper #sech1 {
-  margin-left: min(4vw, 50px);
-  padding-bottom: 40px;
-  padding-top: 10px;
 }
 #hero-wrapper h1 {
   font-family: "Lora", serif;
@@ -25,6 +19,8 @@ body {
   font-weight: 500;
   line-height: 100%;
   width: 100%;
+  margin-bottom: 50px;
+  margin-top: 60px;
 }
 #hero-wrapper img {
   height: 600px;
@@ -37,7 +33,6 @@ body {
   width: 65%;
 }
 #hero-wrapper p {
-  margin-left: min(4vw, 50px);
   width: 75%;
   font-size: min(1.3vw, 16px);
   color: rgba(107, 107, 107, 0.8352941176);
@@ -77,9 +72,6 @@ body {
     font-size: max(16vw, 40px);
     padding: 0;
     color: #fff;
-  }
-  #hero-wrapper #hero-txt-wp #sech1 {
-    margin: 10px 0 50px 2vw;
   }
   #hero-wrapper #hero-txt-wp p {
     margin: 0;
@@ -123,7 +115,7 @@ body {
   #story-wrapper {
     width: 100%;
     flex-direction: column;
-    padding: 70px 0 0 5.5vw;
+    padding: 100px 0 0 5.5vw;
     margin: 0;
   }
   #story-wrapper .story-text-nav {

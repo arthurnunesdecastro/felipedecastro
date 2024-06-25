@@ -1,5 +1,5 @@
 let dropdownMenu = document.querySelector('ul.pages')
-let menuBtn      = document.querySelector('#menu')
+let menuBtn      = document.querySelector('.menu')
 let sendMsg  = document.getElementById('send')
 let nextBtn = document.getElementById('next');
 

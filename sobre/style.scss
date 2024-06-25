@@ -17,25 +17,20 @@ body{
     :nth-child(3){
         margin-top: 20px;
     }
-    #sech1{
-        margin-left: min(4vw,50px);
-        padding-bottom: 40px;
-        padding-top: 10px;
-    }
     h1{
         font-family: "Lora", serif;
         font-size: min(6vw,120px);
         font-weight: 500;
         line-height: 100%;
         width: 100%;
+        margin-bottom: 50px;
+        margin-top: 60px;
     }
     width: 84%;
     border-bottom: 0.7px solid rgba(0, 0, 0, 0.062);
-    padding: 30px;
-    // justify-content: space-between;
     display: flex;
     margin-left: 7.4%;
-    padding: 50px 0 60px 7vw;
+    padding: 50px 0 0 7vw;
     img{
         height: 600px;
         width: 40%;
@@ -48,7 +43,6 @@ body{
 
 
     p{
-        margin-left: min(4vw,50px);
         width: 75%;
         font-size: min(1.3vw,16px);
         color: #6b6b6bd5;
@@ -84,12 +78,8 @@ body{
             }
             h1{
                 font-size: max(16vw, 40px);
-
                 padding: 0;
                 color: #fff;
-            }
-            #sech1{
-                margin: 10px 0 50px 2vw;
             }
             p{
                 margin: 0;
@@ -102,7 +92,6 @@ body{
 
     }
 }
-
 
 
 #story-wrapper{
@@ -137,7 +126,7 @@ body{
     @include mobile(){
         width: 100%;
         flex-direction: column;
-        padding: 70px 0 0 5.5vw;
+        padding: 100px 0 0 5.5vw;
         margin: 0;
         .story-text-nav{
             width: 100%;
