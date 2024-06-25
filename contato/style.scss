@@ -1,0 +1,237 @@
+
+$desktop-width: 880px;
+
+@mixin mobile {
+  @media (min-width: 0) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+body{
+    color: #1a1b1f;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39),
+                 rgba(0, 0, 0, 0.452)), 
+                 url('../resources/bg_black_img.jpg');
+    background-position: 0 0, 0 0;
+    background-size: auto, auto;
+    padding: 60px 7.5vw 120px;
+    color: rgba(255, 255, 255, .66);
+    align-items: normal;
+
+    @include mobile(){
+        background-image: none;
+        flex-direction: column;
+        padding: 0;
+        color: #1a1b1f;
+    }
+
+}
+
+.contact-text{
+    width: 50%;
+    @include mobile(){
+        display: none;
+    }
+}
+
+.contact-form{
+    width: 50%;
+    background-color: #fff;
+    color: #000;
+    padding: 38px 41px 50px 43px;
+    @include mobile(){
+        width: 100%;
+        padding-top: 25px;
+        div{
+            flex-direction: column;
+            width: 100%;
+        }
+        textarea{
+            border-radius: 15px;
+        }
+        input[type=text] & input[type=tel]{
+            border-radius: 20px;
+        }
+    }
+}
+
+.bar{
+    width: 50px;
+    height: 2px;
+    background-color: #DFAE4F;
+    margin-right: 11px;
+}
+
+h2{
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+h1{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    font-size: 55px;
+    line-height: 65px;
+    font-weight: 400;
+    @include mobile(){
+        color: #1a1b1f;
+        margin: 0;
+        font-size: 36px;
+        line-height: 52px;
+        width: 80%;
+        padding: 15px 0px 0px 43px;
+    }
+}
+
+#mobileh1{
+    display: none;
+    @include mobile(){
+        display: inline;
+    }
+}
+
+h3{
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-size: 14.5px;
+    font-weight: 400;
+}
+
+.heading-txt{
+    color: #fff;
+    margin-bottom: 61px;
+    padding-top: 10px;
+    width: 70%;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.contact-links a{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14.5px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.contact-links img{
+    width: 35px;
+    margin-right: 9px;
+}
+
+.contact-form p{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.contact-form input[type=text], input[type=tel]{
+    width: 100%;
+    color: #1a1b1f;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .06);
+    margin-bottom: 20px;
+    padding: 25px 35px 25px 15px;
+    font-size: 16px;
+    line-height: 25px;
+    height: 38px;
+
+    &::placeholder{
+        color: #0000005d;
+    }
+
+}
+
+textarea{
+    width: 100%;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .06);
+    margin-bottom: 40px;
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 1.42857em;
+    display: block;
+    height: 150px;
+
+    &::placeholder{
+        color: #0000005d;
+    }
+}
+
+input[type=text], input[type=tel], textarea:focus{
+    outline: none;
+}
+
+.sbt{
+    justify-content: space-between;
+}
+
+.wd{
+    width: 48%;
+}
+
+#input-nav{
+    display: flex;
+    align-items: center;
+    @include mobile(){
+        flex-direction: row;
+        justify-content: space-between;
+        #whatsapp{
+            flex: 0;
+            margin-right: 8vw;
+        }
+    }
+    #whatsapp{
+        margin-left: 1vw;
+        padding: 4px;
+        height: 54px;
+        padding-bottom: 0;
+        img{
+            width: 44px;
+            height: 44px;
+        }
+        border-radius: 2px;
+        border: none;
+        background: #1ecd1e;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent;
+        box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+        transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+        font-size: 2rem;
+        font-weight: 600;
+        color: #6E7BF2;
+        &:active{
+            box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                        -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                        inset -4px -4px 6px 0 rgba(255,255,255,.5),
+                        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+        }
+        &:hover{
+            background: radial-gradient(circle,  #1ecd1e 0%, #e4e4e4 60%);
+            color: rgba(102,102,102,.5); 
+            animation: colorchange 3s linear infinite;
+            cursor: pointer;
+        }
+    }
+
+}
