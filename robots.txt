@@ -1,0 +1,9 @@
+User-agent: *
+
+
+Disallow: /style/
+Disallow: /resources/
+Disallow: /main.js/
+
+# GitHub URL 
+Sitemap: https://arthurnunesdecastro.github.io/sitemap.xml

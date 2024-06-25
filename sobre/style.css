@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+body {
+  color: #252525;
+}
+
+#hero-wrapper {
+  width: 84%;
+  border-bottom: 0.7px solid rgba(0, 0, 0, 0.062);
+  display: flex;
+  margin-left: 7.4%;
+  padding: 50px 0 0 7vw;
+}
+#hero-wrapper :nth-child(3) {
+  margin-top: 20px;
+}
+#hero-wrapper h1 {
+  font-family: "Lora", serif;
+  font-size: min(6vw, 120px);
+  font-weight: 500;
+  line-height: 100%;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+#hero-wrapper img {
+  height: 600px;
+  width: 40%;
+  margin-left: 3vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hero-wrapper div {
+  width: 65%;
+}
+#hero-wrapper p {
+  width: 75%;
+  font-size: min(1.3vw, 16px);
+  color: rgba(107, 107, 107, 0.8352941176);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+@media (min-width: 0) and (max-width: 1026px) {
+  #hero-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+  }
+  #hero-wrapper img {
+    position: absolute;
+    z-index: -1;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    filter: drop-shadow(8px 8px 8px black) blur(2px) brightness(40%);
+    height: 600px;
+  }
+  #hero-wrapper :nth-child(3) {
+    display: none;
+  }
+  #hero-wrapper #hero-txt-wp {
+    width: 100%;
+    margin: 0 0 0 5vw;
+    padding: 115px 7vw 185px 5vw;
+  }
+  #hero-wrapper #hero-txt-wp #h1-wp {
+    width: 100%;
+  }
+  #hero-wrapper #hero-txt-wp h1 {
+    font-size: max(16vw, 40px);
+    padding: 0;
+    color: #fff;
+  }
+  #hero-wrapper #hero-txt-wp p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+#story-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 50px 17.5%;
+  justify-content: space-between;
+}
+#story-wrapper #img-wrapper {
+  width: 40%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+#story-wrapper #img-wrapper img {
+  width: 100%;
+}
+#story-wrapper .story-text-nav {
+  width: 60%;
+  padding-right: 10%;
+}
+#story-wrapper .story-text-nav :nth-child(4) {
+  margin-top: 30px;
+}
+#story-wrapper .story-text-nav p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.625em;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  font-size: min(1.1vw, 16px);
+}
+@media (min-width: 0) and (max-width: 1026px) {
+  #story-wrapper {
+    width: 100%;
+    flex-direction: column;
+    padding: 100px 0 0 5.5vw;
+    margin: 0;
+  }
+  #story-wrapper .story-text-nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #story-wrapper .story-text-nav p {
+    width: 95%;
+    margin-bottom: 80px;
+    font-size: max(1.5vw, 13px);
+  }
+  #story-wrapper .story-text-nav h2 {
+    display: none;
+  }
+  #story-wrapper .story-text-nav .story-bar-nav {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    padding-bottom: 35px;
+  }
+  #story-wrapper .story-text-nav .story-bar-nav h2 {
+    display: inline;
+    font-weight: 500;
+    font-size: 33px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-transform: none;
+    margin-bottom: 15px;
+  }
+  #story-wrapper .story-text-nav .story-bar-nav .bar {
+    width: 40px;
+    height: 7px;
+    background-image: linear-gradient(160deg, #ac7200, #DFAE4F);
+    border-radius: 10px;
+  }
+  #story-wrapper #img-wrapper {
+    width: 100%;
+    padding-right: 5vw;
+    flex-direction: column;
+    padding-bottom: 200px;
+  }
+}
+#story-wrapper .story-bar-nav {
+  display: flex;
+  align-items: center;
+}
+#story-wrapper .story-bar-nav h2 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+#story-wrapper .story-bar-nav .bar {
+  width: 50px;
+  height: 2px;
+  background-color: #DFAE4F;
+  margin-right: 15px;
+}
+#story-wrapper h2 {
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+  line-height: 1.348em;
+  margin: 19px 0;
+  max-width: 558px;
+  font-size: min(3vw, 50px);
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
