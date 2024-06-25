@@ -267,6 +267,9 @@ header {
   word-spacing: 3px;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+.hero-wrap .short-p {
+  display: none;
+}
 @media (min-width: 0px) and (max-width: 1036px) {
   .hero-wrap #hero-txt-wp {
     padding: 60px 1vw 150px 0;
@@ -289,6 +292,20 @@ header {
     padding-left: 1vw;
     width: 100%;
     font-size: max(1vw, 14px);
+  }
+  .hero-wrap .desktop-p {
+    display: none;
+  }
+  .hero-wrap .short-p {
+    display: block;
+  }
+}
+@media (min-width: 620px) and (max-width: 1036px) {
+  .hero-wrap .desktop-p {
+    display: block;
+  }
+  .hero-wrap .short-p {
+    display: none;
   }
 }
 
